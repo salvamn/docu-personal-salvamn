@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="/img/icons8_baby_yoda.ico"> <!-- icono de la pagina -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--<script src="js/index.js"></script>->>
+
+    <title>Inicio</title>
+</head>
+<body>
+    <nav> <!--barra de navegacion-->
+        <ul class="navbar">
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+   
+
+    <header id="header-index">
+        <h1>Programación Web</h1>
+    </header>
+
+ 
+
+
+
+    <div id="caja-contenedora"> <!-- esta caja contiene la informacion de cada tecnologia -->
+        <div id="menu-navegacion"> <!-- menu de navegacion -->
+            <aside >
+                <h2>Documentación</h2>
+                <ul>                    
+                    <details>
+                        <summary>HTML 5</summary>
+                        <ul class="ordenar-li">
+                            <li><a href="#documentacion-html">Arriba</a></li>
+                            <li><a href="#texto">Texto</a></li>
+                            <li><a href="#enlaces">Enlaces</a></li>
+                            <li><a href="#imagenes">Imagenes</a></li>
+                            <li><a href="#listas">Listas</a></li>
+                            <li><a href="#tablas">Tablas</a></li>
+                            <li><a href="#formulario">Formularios</a></li>
+                        </ul>
+                    </details>
+
+                    <li><a href="#">CSS3</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                    <li><a href="#">PHP</a></li>
+                </ul>
+
+                <br>
+
+                <audio id="reproductor" src="source/Mauve - Light The Night (Lyrics).mp3"  controls></audio>
+            </aside>
+        </div> <!-- menu de navegacion -->
+
+
+        <div class="contenedor-docu" id="documentacion-html"> <!-- contenedor con la informacion -->
+            <div class="imagen-titulo">
+                <img src="img/html5.png" alt="Logo de HTML 5">
+                <h2>HTML 5 : Estructura basica de un documento</h2>
+            </div>
+
+            <br><br>
+            
+            <div class="caja-hija">
+                <p>HTML de las siglas en ingles HyperText Markup Language, html es el lenguaje para el desarrollo web, este nos permite darle una estructura a nuestra pagina. Como podemos observar en la imagen de abajo tenemos lo que es una estructura para un pagina web similar en la que estamos navegando en este momento(Esta estructura no es la definitiva ni la unica, cada desarrollador puede diseñar su propia estructura).
+                </p>
+                
+                <img class="centrar-item" src="img/estructura-web.PNG" alt="Estructura de una web">
+                
+                <br>
+
+                <p>en el ejemplo que podemos observar abajo tenemos una estructura basica de html, la etiqueta DOCTYPE hace referencia a que se esta usando un archivo html 5, seguido viene la etiqueta HTML que declara que su contenido debe ser interpretado como codigo html, el HEAD es el lugar donde configuraremos algunos aspectos de nuestro documento y el BODY es el cuerpo donde agregaremos muchas otras etiquetas.
+                </p>
+
+                <br>
+
+                <pre class="back-pre">
+                    <code class="codigo-pintado">
+    &lt!DOCTYPE html&gt  
+    &lthtml lang="es"&gt
+    &lthead&gt
+        &lttitle>Titulo de la Pagina&lt/title&gt 	
+    &lt/head&gt
+        &ltbody&gt
+        &lt/body&gt
+    &lt/html&gt
+                    </code>
+                </pre>
+    
+                <img class="centrar-item" src="img/imagen-html-descripccion.PNG" alt="Etiqueta html">
+            </div>
+            
+
+            <br>
+
+
+            <div> <!-- etiquetas -->
+                <h3>Etiquetas y sus usos</h3>
+                <br>
+    
+                <div>
+                    <h3 id="texto">Texto</h3>
+                    
+                    <p>&ltp&gt : La etiqueta <strong>p</strong> representa un parrafo.</p>
+                    <div class="div-ejemplo-etiquetas">
+                        <pre>
+                            <code>
+&ltp&gtHola soy un parrafo &lt/p&gt
+                            </code>
+                        </pre>
+
+                        <div>
+                            <h4>Resultado</h4>
+                            <p>Hola soy un parrafo</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <p>&ltpre&gt : La etiqueta <strong>pre</strong> nos permite mostrar codigo de programacion sin que este intervenga en el documento.
+                    </p>
+                    <p>&ltcode&gt : La etiqueta <strong>code</strong> representa codigo de programacion se usa junto a la etiqueta pre.</p>
+                    <div class="div-ejemplo-etiquetas">
+                        <pre class="ejemplo-etiquetas-importante">
+                            <code>
+&ltpre&gt
+    &ltcode&gt
+        print("Hola mundo, soy codigo de python")
+    &lt/code&gt
+&lt/pre&gt
+                            </code>
+                        </pre>
+
+                        <div>
+                            <h4>Resultado</h4>
+                            <code>
+                                print("Hola mundo, soy codigo de python")
+                            </code>
+                        </div>
+                    </div>
+
+                   
+                    <p>&ltspan&gt : La etiqueta <strong>span</strong> uno de sus usos es para aplicar estilos personalizados.</p>
+                    <div class="div-ejemplo-etiquetas">
+                        <pre class="ejemplo-etiquetas-importante">
+                            <code>
+&ltp&gt
+    Soy el parrafo
+    &ltspan style="color: blue"&gt
+        Soy un span personalizable.
+    &lt/span&gt
+&lt/p&gt
+                            </code>
+                        </pre>
+
+                        <div>
+                            <h4>Resultado</h4>
+                            <p>Soy el parrafo <span style="color: blue">Soy un span personalizable.</span></p>
+                        </div>
+                    </div>
+
+
+                    <p>&ltbr&gt : La etiqueta <strong>br</strong> nos permite agregar un salto de linea.</p>
+
+                    <p>&ltwbr&gt : La etiqueta <strong>wbr</strong> hace que el navegador opcionalmente agregue un salto de linea donde lo crea necesario.</p>
+                    <p>&ltem&gt : <strong>em</strong> agrega un enfasis al texto, muesta el texto en cursiva.</p>
+                    <p>&ltstrong&gt : <strong>strong</strong> nos permite colocar un texto o una palabra en negrita.</p>
+                    <p>&lti&gt : La etiqueta <strong>i</strong> muestra el texto marcado con un estilo en cursiva o italica.</p>
+                    <p>&ltu&gt : La etiqueta <strong>u</strong> muestra el texto o la palabra en subrayado.</p>
+                    <p>&ltb&gt : Esta etiqueta <strong>b</strong> se usa para indicar importancia al texto o parrafo dajandola en negrita.</p>
+                    <p>&ltmark&gt : Esta etiqueta <strong>mark</strong> nos permite <mark>resaltar</mark> un texto o frase relevante.</p>
+                    <p>&ltsmall&gt : La etiqueta <strong>small</strong> cambia el tamaño de una letra a <small>pequeña</small>.</p>
+                    <p>&ltcite&gt : La etiqueta <strong>cite</strong> se usa para representar una <cite>opinion, un autor, una obra, una pelicula, etc</cite>.</p>
+                    <p>&ltaddress&gt : La etiqueta <strong>address</strong> se puede usar para representar una direccion, frecuentemente se usa en el footer.</p>
+                    <p>&lttime&gt : Esta etiqueta <strong>time</strong> representa una fecha en formato legible para el usuario, <time datetime="2021-05-08" pubdate>2021-05-08.</time></p>
+                    <p>&ltdata&gt : Esta etiqueta <strong>data</strong> representa datos genericos.</p>
+                </div>
+    
+
+                <br>
+                <hr>
+                <br>
+    
+
+                <div>
+                    <h3 id="enlaces">Enlaces</h3>
+    
+                    <p>&lta&gt : La etiqueta <strong>a</strong> o conocida tambien como <strong>anchor</strong> nos permite crear un enlace que al presionarlo puede abrir una pagina, una imgen o hasta descargar un archivo.</p>
+                </div>
+    
+
+                <br>
+                <hr>
+                <br>
+
+
+                <div>
+                    <h3 id="imagenes">Imagenes</h3>
+    
+                    <p>&ltimg&gt : La etiqueta <strong>img</strong> nos permite mostrar una imagen en el documento.</p>
+                    <p>&ltpicture&gt : <strong>picture</strong> nos sirve para mostrar imagenes en multiples resoluciones, su uso comun es al momento en el que se necesita hacer una web responsiva.</p>
+                    <p>&ltfigure&gt : La etiqueta <strong>figure</strong> epresenta contenido independiente, a menudo con un título. Si bien   se relaciona con el flujo principal, su posición es independiente de éste. Por lo general, se trata de una imagen, una ilustración, un diagrama, un fragmento de código, o un esquema al que se hace referencia en el texto principal, pero que se puede mover a otra página o a un apéndice sin que afecte al flujo principal.</p>
+                    <p>&ltfigcaption&gt : La etiqueta <strong>figcaption</strong> nnos permite agregarle un titulo auna imagen por ejemplo.</p>
+                </div>
+    
+
+                <br>
+                <hr>
+                <br>
+
+
+                <div>
+                    <h3 id="listas">Listas</h3>
+    
+                    <p>&ltul&gt : La etiqueta <strong>ul</strong> crea una lista desordenada.</p>
+                    <p>&ltli&gt : La etiqueta <strong>li</strong> nos permite definir un elemento de la lista, esta etiqueta va en el cuerpo de la etiqueta ul o ol.</p>
+                    <p>&ltol&gt : La etiqueta <strong>ol</strong> crea una lista ordenada.</p>
+                    <p>&ltdl&gt : La etiqueta <strong>dl</strong> crea una lista de terminos y descripcciones.</p>
+        
+                    <br>
+        
+                    <div class="centrar-item-ejemplo">
+                        <h4>Esto es una lista desordenada</h4>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+        
+                        <br>
+        
+                        <h4>Esto es una lista ordenada</h4>
+                        <ol>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ol>
+                    </div>
+                </div>
+    
+
+                <br>
+                <hr>
+                <br>
+    
+
+                <div>
+                    <h3 id="tablas">Tablas</h3>
+                    <p>&lttable&gt : Esta etiqueta <strong>table</strong> define una tabla.</p>
+                    <p>&lttr&gt : La etiqueta <strong>tr</strong> define una fila de celdas en una tabla.</p>
+                    <p>&ltth&gt : La etiqueta <strong>th</strong> define una celda para la cabecera de nuestra tabla, y pinta en negrita el contenido dentro de ella.</p>
+                    <p>&lttd&gt : La etiqueta <strong>td</strong> define una celda para nuestra tabla</p>
+        
+                    <br>
+        
+                    <div class="centrar-item-ejemplo">
+                        <table border="1px solid">
+                            <tr>
+                                <th>Cabecera 1</th>
+                                <th>Cabecera 2</th>
+                            </tr>
+                            <tr>
+                                <td>Item 1</td>
+                                <td>Item 2</td>
+                            </tr>
+                        </table>
+                    </div>
+        
+                    <br>
+        
+                    <img class="centrar-item" src="img/tabla-estructura.PNG" alt="Estructura de una tabla" width="60%">
+                </div>
+    
+
+                <br>
+                <hr>
+                <br>
+    
+
+                <div>
+                    <h3 id="formulario">Formularios</h3>
+                
+                    <p>Los formularios permiten que los usuarios puedan navegar en nuestra web e introducir informacion que podemos enviar al servidor y procesarla.</p>
+        
+                    <br>
+        
+                    <p>&ltform&gt : La etiqueta <strong>form</strong> define un elemento de tipo formulario.</p>
+                    <p>&ltinput&gt : La etiqueta <strong>input</strong> crea un capo de tipo entrada o tambien conocido como caja de texto.</p>
+                    <input type="text">
+                    <p>&lttextarea&gt : La etiqueta <strong>textarea</strong> crea un campo para multiples lineas.</p>
+                    <textarea name="" id="" cols="20" rows="5"></textarea>
+                    <p>&ltselect&gt : <strong>select</strong> crea un combobox con opciones seleccionables.</p>
+                    <select name="" id="">
+                        <option value="">HTML 5</option>
+                        <option value="">CSS3</option>
+                    </select>
+        
+                    <p>&ltbutton&gt : La etiqueta <strong>button</strong> como su nombre lo dice crea un boton.</p>
+                    <button>Soy un boton</button>
+                </div>
+            </div> <!-- etiquetas -->
+        </div> <!-- contenedor con la informacion -->
+    </div> <!-- contenedor padre -->
+
+    <footer>
+        <p><a href="Salvador Mellado"></a></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia consectetur assumenda eius tenetur labore similique, debitis facere provident? Dicta, aliquid incidunt! Quasi, ipsam? Labore reprehenderit maxime ratione harum debitis.</p>
+    </footer>
+
+
+</body>
+</html>

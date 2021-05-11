@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <nav> <!--barra de navegacion-->
+        <ul class="navbar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>     
+    </nav>
+    
+    <form action="" id="form-registro">
+        <h1 id="titulo-registro">Registro</h1>
+
+        <div class="div-form">
+
+            <p class="parrafo-form">Nombre</p>
+            <input type="text" name="f-nombre" class="input-form" placeholder="tu nombre *" required>
+            <p class="parrafo-form">Apellido</p>
+            <input type="text" name="f-apellido" id="apellido" class="input-form" placeholder="tu apellido *" required>
+
+            <p class="parrafo-form">Selecciona tu genero</p>
+            <input type="radio" name="f-genero" class="radio-genero" value="masculino">Masculino
+            <input type="radio" name="f-genero" class="radio-genero" value="femenino">Femenino
+
+            <p class="parrafo-form">Email</p>
+            <input type="email" name="f-email" class="input-form" placeholder="tu email *" required>
+            <p class="parrafo-form">Telefono</p>
+            <input type="tel" name="f-telefono" class="input-form" placeholder="tu telefono *" required>
+            
+
+            <input type="button" value="Enviar" class="btn-form blue-btn">
+            <input type="reset" value="Limpiar" class="btn-form red-btn">
+        </div>
+
+
+
+
+    </form>
+</body>
+</html>
